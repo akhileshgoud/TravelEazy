@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="LogoutUserControl.ascx.cs" Inherits="DsodAsgmnt5.LogoutUserControl" %>
+<asp:Button ID="Button1" runat="server" Text="Logout" OnClick="Button1_Click" />

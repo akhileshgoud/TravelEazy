@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://webstrar13.fulton.asu.edu/Page8/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://webstrar13.fulton.asu.edu/Page8/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://webstrar13.fulton.asu.edu/Page8/Service1.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_registerUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_InputMessage">
+    <wsdl:part name="parameters" element="tns:login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:loginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:addUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewStaff_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewStaff" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewStaff_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewStaffResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewManager_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewManager" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewManager_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewManagerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addOrder_InputMessage">
+    <wsdl:part name="parameters" element="tns:addOrder" />
+  </wsdl:message>
+  <wsdl:message name="IService1_addOrder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:addOrderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewOrders_InputMessage">
+    <wsdl:part name="parameters" element="tns:viewOrders" />
+  </wsdl:message>
+  <wsdl:message name="IService1_viewOrders_OutputMessage">
+    <wsdl:part name="parameters" element="tns:viewOrdersResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="registerUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerUser" message="tns:IService1_registerUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerUserResponse" message="tns:IService1_registerUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/login" message="tns:IService1_login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/loginResponse" message="tns:IService1_login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addUser" message="tns:IService1_addUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addUserResponse" message="tns:IService1_addUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteUser" message="tns:IService1_deleteUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteUserResponse" message="tns:IService1_deleteUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewUser" message="tns:IService1_viewUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewUserResponse" message="tns:IService1_viewUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewStaff">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewStaff" message="tns:IService1_viewStaff_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewStaffResponse" message="tns:IService1_viewStaff_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewManager">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewManager" message="tns:IService1_viewManager_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewManagerResponse" message="tns:IService1_viewManager_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/addOrder" message="tns:IService1_addOrder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/addOrderResponse" message="tns:IService1_addOrder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="viewOrders">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/viewOrders" message="tns:IService1_viewOrders_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/viewOrdersResponse" message="tns:IService1_viewOrders_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registerUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="login">
+      <soap:operation soapAction="http://tempuri.org/IService1/login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/addUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewStaff">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewStaff" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewManager">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewManager" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="addOrder">
+      <soap:operation soapAction="http://tempuri.org/IService1/addOrder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="viewOrders">
+      <soap:operation soapAction="http://tempuri.org/IService1/viewOrders" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://webstrar13.fulton.asu.edu/Page8/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

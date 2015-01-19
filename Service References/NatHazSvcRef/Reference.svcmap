@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ddccc329-5971-43a5-a4a7-e15c4489880a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://webstrar13.fulton.asu.edu/Page4/NatHazService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="NatHazService.xsd" MetadataType="Schema" ID="84303413-ef1e-4188-8014-cafc23fffcb4" SourceId="1" SourceUrl="http://webstrar13.fulton.asu.edu/Page4/NatHazService.svc?xsd=xsd1" />
+    <MetadataFile FileName="NatHazService1.xsd" MetadataType="Schema" ID="68661dfe-7efe-4504-84db-410593f502de" SourceId="1" SourceUrl="http://webstrar13.fulton.asu.edu/Page4/NatHazService.svc?xsd=xsd0" />
+    <MetadataFile FileName="NatHazService.wsdl" MetadataType="Wsdl" ID="147c1200-8370-4e55-ae57-1fcc205f2277" SourceId="1" SourceUrl="http://webstrar13.fulton.asu.edu/Page4/NatHazService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
