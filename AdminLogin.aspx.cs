@@ -62,7 +62,6 @@ namespace DsodAsgmnt5
                         usercookie["Role"] = "Admin";
                         usercookie.Expires = System.DateTime.Now.AddDays(30);
                         Response.Cookies.Add(usercookie);
-                        //Response.Redirect("Home.aspx");
                         Response.Redirect("http://webstrar13.fulton.asu.edu/page0/AdminPage.aspx");
                     }
                     else
