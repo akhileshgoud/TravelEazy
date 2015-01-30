@@ -22,7 +22,6 @@ namespace DsodAsgmnt5
                 Response.Redirect("http://webstrar13.fulton.asu.edu/page0/Home.aspx");
             }
         }
-
         protected void Button2_Click(object sender, EventArgs e)
         {
             string tot = Request.QueryString["total"];
@@ -90,7 +89,6 @@ namespace DsodAsgmnt5
                 }
             }
         }
-
         protected void Button1_Click(object sender, EventArgs e)
         {
             try
